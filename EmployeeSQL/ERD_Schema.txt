@@ -1,22 +1,22 @@
 Departments
 -
-Dept_No Int PK
+Dept_No Int PK 
 Dept_Name Varchar
 
 Dept_Emp
 -
-Emp_No Int PK
-Dept_No Int 
+Emp_No Int PK FK >- Employees.Emp_No
+Dept_No Int PK
 
 Dept_Manager
 -
-Dept_No Int PK
-Mgr_Emp_No Int
+Dept_No Int 
+Mgr_Emp_No Int PK
 
 Employees
 -
-Emp_No Int PK
-Emp_Title_ID Varchar
+Emp_No Int PK FK >- Salaries.Emp_No
+Emp_Title_ID Varchar FK >- Titles.Title_ID
 Birth_Date Date
 First_Name Varchar
 Last_Name Varchar
