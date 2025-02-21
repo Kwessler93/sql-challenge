@@ -1,0 +1,34 @@
+Departments
+-
+Dept_No Int PK
+Dept_Name Varchar
+
+Dept_Emp
+-
+Emp_No Int PK
+Dept_No Int 
+
+Dept_Manager
+-
+Dept_No Int PK
+Mgr_Emp_No Int
+
+Employees
+-
+Emp_No Int PK
+Emp_Title_ID Varchar
+Birth_Date Date
+First_Name Varchar
+Last_Name Varchar
+Sex Varchar
+Hire_Date Date
+
+Salaries
+-
+Emp_No Int PK
+Salary Int
+
+Titles
+-
+Title_ID Varchar PK
+Title Varchar
