@@ -1,7 +1,7 @@
 # sql-challenge
 Module 9 challenge
 
-For this challenge, I imported all of the CSV files in the Resources folder into PgAdmin and made each one into a table (see SQL-Challenge_Data_Engineering.sql for code). Then I used all of the tables to create the following lists(see SQL-Challenge-Data_Analysis.sql for code). The screenshots are of the first several lines in the PgAdmin output:
+For this challenge, I imported all of the CSV files in the Resources folder into PgAdmin and made each one into a table (see SQL-Challenge_Data_Engineering.sql for code). Then I used all of the tables to create the following lists(see SQL-Challenge-Data_Analysis.sql for code). All of the sql files and the ERD png files are in the EmployeeSQL folder. The following screenshots are of the first several lines in the PgAdmin output for each list:
 
 1. List the employee number, last name, first name, sex, and salary of each employee.
 
