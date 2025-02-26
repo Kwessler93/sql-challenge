@@ -8,7 +8,7 @@ CREATE TABLE salaries (
     emp_no Serial Not Null,
     salary Integer Not Null,
     PRIMARY KEY (emp_no)
-)
+);
 
 CREATE TABLE employees (
     emp_no Serial NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE employees (
 	sex Varchar(10) Not Null,
 	hire_date Date Not Null,
     PRIMARY KEY (emp_no),
-	FOREIGN KEY(emp_no) References Salaries (emp_no),
+	FOREIGN KEY(emp_no) References salaries (emp_no),
 	FOREIGN KEY(emp_title_id) References titles (title_id)
 );
 
