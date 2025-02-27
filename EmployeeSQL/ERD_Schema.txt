@@ -1,6 +1,6 @@
 Departments
 -
-Dept_No Varchar PK 
+Dept_No Varchar PK
 Dept_Name Varchar
 
 Dept_Emp
@@ -10,12 +10,12 @@ Dept_No Integer PK
 
 Dept_Manager
 -
-Dept_No Integer 
-Mgr_Emp_No Serial PK
+Dept_No Integer FK >- Departments.Dept_No
+Mgr_Emp_No Serial PK FK >- Employees.Emp_No
 
 Employees
 -
-Emp_No Serial PK FK >- Salaries.Emp_No
+Emp_No Serial PK
 Emp_Title_ID Varchar FK >- Titles.Title_ID
 Birth_Date Date
 First_Name Varchar
@@ -25,7 +25,7 @@ Hire_Date Date
 
 Salaries
 -
-Emp_No Serial PK
+Emp_No Serial PK FK >- Employees.Emp_No
 Salary Integer
 
 Titles
